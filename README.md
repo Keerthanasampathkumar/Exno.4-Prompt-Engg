@@ -1,7 +1,8 @@
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 ### DATE:                                                                            
-### REGISTER NUMBER : 
-### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
+### REGISTER NUMBER : 212222230066
+### Aim: 
+To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
 
 ### Algorithm:  1. Direct Instruction Prompts
 Objective: Guide the chatbot to respond concisely to customer inquiries.
@@ -41,8 +42,44 @@ Prompt Pattern:
 Prompt: "When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
 Result: The various types of Prompts are executed successfully.
 
+# PROMPT:
+### Straightforward Prompt:
+```
+“Generate a weekly report for Team A’s customer support activity from April 20 to April 27.”
+```
+
+### Tabular Format Prompting:
+```
+“Create a detailed report for a technical incident on April 25, showing categories like Timestamp, Event, Action Taken, and Resolution in table format.”
+```
+
+### Preceding Question Prompting:
+```
+“Before writing the summary, ask for any missing data: team name, scenario type, time range, and outcome. Then generate a narrative report.”
+```
+
+# OUTPUT
+### Straightforward:
+AI: “Between April 20 and 27, Team A resolved 152 customer queries, with an average response time of 3.4 hours. The satisfaction rating increased by 6%, and two minor escalations were addressed. No SLA violations occurred during this period.”
+
+Tabular:
+AI:
+![image](https://github.com/user-attachments/assets/bce5d4a4-8255-4e16-a96b-9cf183a778b4)
+
+### Preceding Questioning:
+AI:
+    “What is the name of the team or department?”
+
+    “What timeframe should the report cover?”
+
+    “What type of scenario (e.g., sales, incidents, feedback) is this about?”
+
+    “Should the report include KPIs or just a summary?”
+
+After input, AI:
+“Here’s the scenario-based report for the DevOps Team covering April 20–27. During this week, two key incidents were managed. The first was a server load spike that was mitigated in under five minutes. The second involved login outages, resolved via authentication fixes. No repeat issues were observed. This proactive handling contributed to 99.98% uptime.”
 
 
 
-# Result: Thus the Prompts were exected succcessfully .
-
+# Result: 
+Each technique serves a different reporting need. The straightforward prompt works well for generating a quick narrative summary and is suited for weekly digests or brief team updates. Tabular formatting is ideal for incident reports, as it clearly shows chronological steps and resolutions. Research notes that tabular reports are easier for managers to skim and compare event timelines . The preceding-question method improves personalization, especially when users omit context. It ensures the AI asks for relevant variables, resulting in higher accuracy and relevance . This method is best for complex or ad hoc reports where input data may be incomplete. In summary, choosing the right prompting technique allows AI to generate scenario reports that are fast, clear, or tailored—depending on the business need.
